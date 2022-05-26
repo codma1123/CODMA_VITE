@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main id="scroll-target">
       <router-view />
     </v-main>
   </v-app>
@@ -8,17 +8,13 @@
 
 <script>
 export default {
-  name: "App",
-
-  data: () => ({
-    //
-  }),
+  setup() {},
 };
 </script>
 
 <style>
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   background: #000;
 }
 
